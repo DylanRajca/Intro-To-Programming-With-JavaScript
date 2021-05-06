@@ -1,0 +1,57 @@
+1. Identify the Constructors for each of the following methods and classify each method as either a "Static" or a "Prototype" method:
+
+substring - String, Prototype
+create - object, Static
+fromCharCode - String, Static
+slice - Array/String, Prototype
+toString - Object/Number/Array/String, Prototype
+
+2. Which of the following names satisfy the style guidelines for variable names? For the purposes of this question, constants are not variables.
+
+Name - No
+index - Yes
+CatName - No
+snake_case - No
+lazyDog - Yes
+quick_Fox - No
+1stCharacter - No
+operand2 - Yes
+BIG_NUMBER - No
+
+3. Which of the following names satisfy the style guidelines for function names?
+
+Name - No
+index - Yes
+CatName - Yes
+snake_case - No
+lazyDog - Yes
+quick_Fox - No
+1stCharacter - No
+operand2 - Yes
+BIG_NUMBER - No
+Solution - No
+
+4. Which of the following names satisfy the style guidelines for constants?
+
+Name - No
+index - No
+CatName - Yes
+snake_case - No
+lazyDog - No
+quick_Fox - No
+1stCharacter - No
+operand2 - No
+BIG_NUMBER - Yes
+Solution - No
+
+5. Which of the following names don't satisfy the style guidelines for naming variables, functions, or constants?
+
+Name - No
+index - No
+CatName - No
+snake_case - Yes
+lazyDog - No
+quick_Fox - Yes
+1stCharacter - Yes
+operand2 - No
+BIG_NUMBER - No
