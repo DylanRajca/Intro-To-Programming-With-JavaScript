@@ -1,3 +1,5 @@
+// Write a program named greeter.js that greets 'Victor' three times.
+
 const greetName = "Victor"
 
 console.log(`Good Morning, ${greetName}`)
