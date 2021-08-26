@@ -113,3 +113,48 @@ let newObj2 = copyObj(objToCopy, ['foo', 'qux']);
 let newObj3 = copyObj(objToCopy, ['bar']);
 
 console.log(newObj);
+
+/* 9. What does the following program log to the console? Why? */
+let foo = {
+    a: 'hello',
+    b: 'world',
+  };
+  
+  let qux = 'hello';
+  
+  function bar(argument1, argument2) {
+    argument1.a = 'hi';
+    argument2 = 'hi';
+  }
+  
+  bar(foo, qux);
+  
+  console.log(foo.a);
+  console.log(qux);
+
+  /* foo.a will log 'hi', since it was modified in the bar function. qux will still log 'hello' 
+  argument2 was only modified in the scope of bar and doesn't change qux which is declared 
+  globally. Objects are mutable and variable reassignment doesn't mutate the original object even
+  if the object is mutable. */
+
+  /* 10. How many primitive values are there in the following expression? Identify them. 
+  How many objects are there in the expression? Identify those objects. */
+  [1, 2, ["a", ["b", false]], null, {}]
+
+  /* Primitive Values - 6
+  1,2,"a","b",false,nul
+  
+  Objects- 4
+  Outside array, 2 nested arrays and nested object
+  */
+
+  /* 6. Write some code to replace the value 6 in the following object with 606: */
+  let obj = {
+    foo: { a: "hello", b: "world" },
+    bar: ["example", "mem", null, { xyz: 6 }, 88],
+    qux: [4, 8, 12]
+  };
+
+  obj.bar[3].xyz = 606;
+
+
